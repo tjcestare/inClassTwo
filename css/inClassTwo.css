@@ -1,1 +1,78 @@
 /*All css for this project should be in this file only, not in the html file*/
+
+#transition1 {
+    width: 500px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+#transition1:hover {
+    width: 100%;
+}
+
+#transition2 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#transition2:hover {
+    width: 300px;
+    height: 300px;
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+#transition3 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    -webkit-transition: width 4s, height 4s, -webkit-transform 4s; /* Safari */
+    transition: width 4s, height 4s, transform 4s;
+}
+
+#transition3:hover {
+    width: 300px;
+    height: 300px;
+    -webkit-transform: rotate(-180deg); /* Safari */
+    transform: rotate(-180deg);
+}
+
+#transition4 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 1s; /* Safari */
+    transition: width 3s;
+    transition-delay: 1s;
+}
+
+#transition4:hover {
+    width: 300px;
+}
+
+#animation1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
